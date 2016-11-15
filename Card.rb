@@ -1,6 +1,6 @@
 class Card
 
-  attr_accessor :name
+  attr_reader :name
 
   def initialize(name)
     @name = name
@@ -21,4 +21,13 @@ class Card
     end
   end
 
+  def suit
+    suit = (name.split("-"))[1]
+  end
+
+  def change_suit(suit)
+    rank = (name.split("-"))[0]
+    name = "#{rank}-#{suit}"
+  end
+  
 end

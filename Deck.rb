@@ -19,10 +19,10 @@ class Deck
     @cards = cards
   end
 
-  def deal(player1, player2)
+  def deal(player1, player2, amount_of_cards)
     player_card = 0
 
-    52.times do |card|
+    amount_of_cards.times do |card|
       if player_card == 0
         player1.add_card(cards[0])
         player_card = 1
@@ -35,6 +35,8 @@ class Deck
 
   end
 
-
+  def top_card
+    return cards.delete_at(0)
+  end
 
 end

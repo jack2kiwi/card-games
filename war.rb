@@ -8,7 +8,7 @@ require "./Deck"
 # player2 = Player.new("Player 2")
 #
 # deck.shuffle
-# deck.deal(player1, player2)
+# deck.deal(player1, player2, 52)
 #
 # def play(player1, player2)
 #   cards_in_play = []

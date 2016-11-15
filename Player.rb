@@ -18,6 +18,10 @@ class Player
     return cards.delete_at(0)
   end
 
+  def play_selected_card(card)
+    return cards.delete(card)
+  end
+
   def shuffle
     cards.shuffle!
 
