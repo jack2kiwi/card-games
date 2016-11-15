@@ -28,6 +28,7 @@ class Card
   def change_suit(suit)
     rank = (name.split("-"))[0]
     name = "#{rank}-#{suit}"
+    @name = name
   end
-  
+
 end

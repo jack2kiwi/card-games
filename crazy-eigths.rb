@@ -26,9 +26,9 @@ def crazy_eights
   end
 
   if player.cards.length > 0
-    puts "YOU WIN!!!"
-  elsif cpu.cards.length > 0
     puts "You lose, better luck next time!"
+  elsif cpu.cards.length > 0
+    puts "YOU WIN!!!"
   end
 
 end
